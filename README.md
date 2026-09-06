@@ -9,6 +9,7 @@ The application listens on port 5000 and displays a message when accessed throug
 - `app.py` - Contains the Flask web application.
 - `requirements.txt` - Contains the Python dependencies required by the application.
 - `Dockerfile` - Contains the instructions for building the Docker image.
+- `compose.yaml` - Defines the Docker Compose configuration for building and running the application.
 - `README.md` - Contains information and instructions for the project.
 
 ## Dependencies
@@ -34,6 +35,20 @@ docker run -p 5000:5000 containerized-app
 ```
 
 This maps port `5000` on the host machine to port `5000` inside the container.
+
+## Run with Docker Compose
+
+Build and start the application using Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+To stop and remove the Compose containers:
+
+```bash
+docker compose down
+```
 
 ## Access the Application
 
